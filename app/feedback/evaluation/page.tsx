@@ -89,11 +89,13 @@ export default function Report() {
                     </div>
                 </div>
                 <div className="row-start-5 flex items-center justify-end mb-5 mr-5">
-                    <button type="submit"
-                        className="border justify-center items-center flex rounded-xl p-2 px-6 bg-[#b91c1c] shadow-lg shadow-[#7e2727]/50 text-white text-base">
-                        <HiArrowLeftStartOnRectangle className="text-white mr-1" />
-                        Salir
-                    </button>
+                    <a href="/report">
+                        <button type="submit"
+                            className="border justify-center items-center flex rounded-xl p-2 px-6 bg-[#b91c1c] shadow-lg shadow-[#7e2727]/50 text-white text-base">
+                            <HiArrowLeftStartOnRectangle className="text-white mr-1" />
+                            Atras
+                        </button>
+                    </a>
                 </div>
             </div>
         </div>

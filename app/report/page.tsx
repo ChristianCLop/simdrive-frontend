@@ -6,6 +6,7 @@ import { BsFillCalendar2DateFill, BsFillPersonVcardFill } from "react-icons/bs";
 import { FaGraduationCap } from "react-icons/fa";
 import { PiExamDuotone } from "react-icons/pi";
 import { MdOutlineFeedback } from 'react-icons/md';
+import { useRouter } from 'next/navigation'
 
 interface Conductor {
   nombre: string;
@@ -36,6 +37,8 @@ export default function Report() {
   const [detalleEvaluacion, setDetalleEvaluacion] = useState<DetalleReporte[]>([]);
   const [loading, setLoading] = useState<boolean>(true);
   const [error, setError] = useState<string | null>(null);
+
+  const router = useRouter();
 
   useEffect(() => {
     const storedCedula = localStorage.getItem('cedula');
@@ -79,6 +82,10 @@ export default function Report() {
       setError('Error en el servicio');
       setLoading(false);
     }
+  };
+
+  const handleFeedbackClick = (ubicacion: string) => {
+    router.push(`/feedback/${ubicacion}`);
   };
 
   if (loading) {
@@ -184,13 +191,11 @@ export default function Report() {
                         <FaGraduationCap className="absolute top-1/2 transform -translate-y-1/2 left-3 text-black text-5xl" />
                         <h1 className=" text-2xl p-2 pl-16 text-black font-semibold">Aprendizaje</h1>
                       </div>
-                      <a href="/feedback">
-                        <button type="submit"
+                        <button onClick={() => handleFeedbackClick('training')} type="submit"
                           className="rounded-xl p-3 m-2 bg-[#1cb96f] shadow-lg shadow-[#1cb96f]/50 text-white text-xs justify-center items-center flex">
                           Ver Retroalimentación
                           <MdOutlineFeedback className="text-white ml-1" />
                         </button>
-                      </a>
                     </div>
                     <div className="row-start-2 row-span-3 border-black">
                       <div className="max-h-44 overflow-x-auto">
@@ -222,13 +227,11 @@ export default function Report() {
                         <h1 className=" text-2xl pl-16 text-black font-semibold">Evaluación</h1>
                       </div>
                       <div className="relative">
-                        <a href="/feedback">
-                          <button type="submit"
+                          <button onClick={() => handleFeedbackClick('evaluation')} type="submit"
                             className="rounded-xl p-3 m-2 bg-[#1cb96f] shadow-lg shadow-[#1cb96f]/50 text-white text-xs justify-center items-center flex">
                             Ver Retroalimentación
                             <MdOutlineFeedback className="text-white ml-1" />
                           </button>
-                        </a>
                       </div>
                     </div>
                     <div className="row-start-2 row-span-3">
