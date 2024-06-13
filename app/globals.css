@@ -31,3 +31,39 @@ body {
     text-wrap: balance;
   }
 }
+
+.bg-login {
+  @apply bg-cover bg-center bg-no-repeat;
+  background-image: url('/img/loginBG.jpg');
+}
+
+.bg-login1 {
+  @apply bg-cover bg-center bg-no-repeat;
+  background-image: url('/img/login1.jpg');
+}
+
+.bg-report {
+  @apply bg-cover bg-center bg-no-repeat;
+  background-image: url('/img/reportBG.jpg');
+}
+
+.bg-landing {
+  @apply bg-cover bg-center bg-no-repeat relative;
+  background-image: url('/img/bgLanding.png');
+}
+
+.bg-landing::before {
+  content: '';
+  @apply absolute inset-0 bg-gradient-to-r from-[#032b02] to-[#087607];
+  opacity: 0.8;
+}
+
+.bg-1 {
+  @apply bg-cover bg-center bg-no-repeat relative;
+  background-image: url('/img/bg1.png');
+}
+
+.bg-2 {
+  @apply bg-cover bg-center bg-no-repeat relative;
+  background-image: url('/img/bg2.png');
+}
