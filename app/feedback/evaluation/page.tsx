@@ -3,10 +3,6 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import { MdFeedback } from "react-icons/md";
-import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
 import { HiArrowLeftStartOnRectangle } from "react-icons/hi2";
 
 interface Infraccion {
@@ -59,32 +55,26 @@ export default function Report() {
                                 <h1 className="border-b border-black text-2xl p-2 pl-16 w-full text-black font-semibold">Retroalimentación</h1>
                             </div>
                         </div>
-                        <div className="row-start-2 row-span-3 ml-4 mr-4">
-                            <Swiper
-                                spaceBetween={20}
-                                slidesPerView={3}
-                                navigation
-                                pagination={{ clickable: true }}
-                                scrollbar={{ draggable: true }}
-                            >
+                        <div className="row-start-2 row-span-3 ml-4 mr-4 overflow-x-auto">
+                            <div className="flex space-x-4">
                                 {infracciones.map((infraccion) => (
-                                    <SwiperSlide key={infraccion.id_detalle}>
-                                        <div className="border-2 border-black rounded-lg grid grid-rows-4 w-60 ml-20 mr-20">
-                                            <div className="row-start-1 row-span-2 flex items-center justify-center border-b-2 border-black">
+                                    <div key={infraccion.id_detalle} className="border-2 border-black rounded-lg flex-shrink-0 w-60">
+                                        <div className="flex flex-col">
+                                            <div className="flex items-center justify-center border-b-2 border-black">
                                                 <div className="border overflow-hidden w-full h-32 rounded-tl-lg rounded-tr-lg">
                                                     <img className="object-fill h-full w-full" src="/img/cone.jpg" alt="Profile Image" />
                                                 </div>
                                             </div>
-                                            <div className="row-start-3 flex items-center justify-center">
+                                            <div className="flex items-center justify-center">
                                                 <h1 className="text-black text-xl font-semibold">{infraccion.nombre}</h1>
                                             </div>
-                                            <div className="row-start-4 flex items-center justify-center text-center">
+                                            <div className="flex items-center justify-center text-center">
                                                 <h1 className="text-black text-base">Cantidad: {infraccion.cantidad}</h1>
                                             </div>
                                         </div>
-                                    </SwiperSlide>
+                                    </div>
                                 ))}
-                            </Swiper>
+                            </div>
                         </div>
                     </div>
                 </div>

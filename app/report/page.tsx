@@ -96,8 +96,8 @@ export default function Report() {
     return <div>Error: {error}</div>;
   }
 
-  const aprendizajeReporte = maestroReportes.find(report => report.ubicacion === 'aprendizaje');
-  const evaluacionReporte = maestroReportes.find(report => report.ubicacion === 'evaluacion');
+  const aprendizajeReporte = maestroReportes.find(report => report.ubicacion === 'Zona de Aprendizaje');
+  const evaluacionReporte = maestroReportes.find(report => report.ubicacion === 'Zona de EvaluaciÃ³n');
 
   return (
     <div className="bg-white w-screen h-screen flex items-center justify-center">

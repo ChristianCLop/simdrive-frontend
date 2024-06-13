@@ -1,7 +1,7 @@
 export default function Home() {
   return (
     <div className="bg-white">
-      <header className="bg-black w-full p-4">
+      <header className="bg-black w-full p-4 text-white">
         <div className="grid grid-col-2">
           <div className="col-start-1">
             <img src="/img/SimDrive.svg" alt="logoSimDrive" />
@@ -25,7 +25,7 @@ export default function Home() {
         </div>
       </header>
       <main className="items-center justify-center">
-        <section id="home" className="w-full bg-landing">
+        <section id="home" className="w-full bg-landing text-white">
           <div className="grid grid-cols-5 gap-4">
             <div className="col-span-3 z-50">
               <img src="/img/carro.png" alt="carro" />
