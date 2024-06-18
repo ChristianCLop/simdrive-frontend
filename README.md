@@ -5,9 +5,7 @@
 
 # SimDrive
 
-SimDrive is a didactic immersive learning experience
-immersive learning experience with traffic rules and driving
-driving skills in virtual worlds. 
+SimDrive is a didactic immersive learning experience with traffic rules in virtual worlds. 
 
 ## Tech Stack
 
