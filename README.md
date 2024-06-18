@@ -1,36 +1,65 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<p align="center">
+  <a  target="blank"><img src="app/favicon.ico" width="200" /></a>
+</p>
 
-## Getting Started
 
-First, run the development server:
+# SimDrive
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+SimDrive is a didactic immersive learning experience
+immersive learning experience with traffic rules and driving
+driving skills in virtual worlds. 
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Tech Stack
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+**Client:** Next.js, HTML, TailwindCSS, CSS
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Features
 
-## Learn More
+- Landing Page
+- Login
+- Report
+- Feedback
 
-To learn more about Next.js, take a look at the following resources:
+## Screenshots
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Virtual World
+![App Screenshot](public/screenshots/SimDriveOS.jpeg)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+### Landing Page
+![App Screenshot](public/screenshots/landing.png)
 
-## Deploy on Vercel
+### Report
+![App Screenshot](public/screenshots/report.png)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Feedback
+![App Screenshot](public/screenshots/feedback.png)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Info
+
+This project aims to identify people's ability to learn traffic signs and apply what they have learned in a safe virtual environment, where their knowledge is effectively evaluated.
+
+#### Project Status
+Currently, the project is in the implementation phase and we are performing tests to ensure its correct operation.
+
+#### Frontend Repository
+This repository contains exclusively the frontend web application. Here you will find the user interface code.
+
+#### Tech 
+**Virtual Environment**: We used OpenSim to create the interactive virtual environment (not included in this repository).
+
+**Database:** We use MySQL as our database. (not included in this repository).
+
+**Backend**: To connect the database to the virtual environment, PHP was used. (not included in this repository).
+
+**Backend - Web application**: The connection between the database and the frontend - web application has been implemented with Node.js with the Express framework.
+
+## Authors
+
+- [@Christian Chico](https://www.github.com/ChristianCLop)
+- [@Enrique Ortiz](https://github.com/EnriqueOrtiz2001)
+- [@Marlon Copara](https://github.com/MarlonCopara)
+
+## SimDrive
+
+We will keep you updated with our progress and future projects. 
+
