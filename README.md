@@ -3,7 +3,7 @@
 </p>
 
 
-# SimDrive
+# SimDrive🚗
 
 SimDrive is a didactic immersive learning experience with traffic rules in virtual worlds. 
 
@@ -36,7 +36,7 @@ SimDrive is a didactic immersive learning experience with traffic rules in virtu
 
 This project aims to identify people's ability to learn traffic signs and apply what they have learned in a safe virtual environment, where their knowledge is effectively evaluated.
 
-#### Project Status
+#### Project Status⚒️
 Currently, the project is in the implementation phase and we are performing tests to ensure its correct operation.
 
 #### Frontend Repository
@@ -51,7 +51,7 @@ This repository contains exclusively the frontend web application. Here you will
 
 **Backend - Web application**: The connection between the database and the frontend - web application has been implemented with Node.js with the Express framework.
 
-## Authors
+## Authors👥
 
 - [@Christian Chico](https://www.github.com/ChristianCLop)
 - [@Enrique Ortiz](https://github.com/EnriqueOrtiz2001)
