@@ -13,10 +13,10 @@ SimDrive is a didactic immersive learning experience with traffic rules in virtu
 
 ## Features
 
-- Landing Page
-- Login
-- Report
-- Feedback
+- Landing Page.
+- Login.
+- Report.
+- Feedback.
 
 ## Screenshots
 
